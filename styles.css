@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('external/sri1copy.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.Fronttext{
+    padding-left: 40rem;
+    display: inline-block
+}
+.Second{
+    margin-top: 10rem;
+    font: bolder;
+    background-color: rgba(246,224,181,0.7);
+    
+}
+.btn1 {
+    background-color: #F6E0B5;
+    /* White background */
+    color: teal;
+    border-color: teal; /* Optional: You can add a border color if needed */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+  }
+  
+.btn1:hover {
+    background-color: #f0f0f0; /* Slightly darker color when hovered */
+    color: teal; /* Text color on hover */
+  }
+
+.first-page-background {
+    background-image: url('external/sri1copy.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.first-page-background:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: inherit;
+    background-size: inherit;
+    background-position: inherit;
+}
+header {
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+main {
+    padding: 20px 0;
+}
+
+footer {
+    padding: 20px 0;
+    background-color: #f8f9fa;
+    margin-top: auto;
+}
+body, header {
+    margin: 0;
+    padding: 0;
+}

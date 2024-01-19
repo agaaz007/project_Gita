@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srimad Bhagavad Gita</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="first-page-background">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Srimad Bhagavad Gita</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Chapters</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Verse by Verse</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1 style="color:white;" class="Fronttext"><mark>Srimad Bhagavad Gita</mark></h1>
+            <div>
+                <% if (ch1_val){ %>
+                  <p class="Second lead"><strong><%= ch1_val %> </strong> </p> 
+                   <% } else{ %> 
+            <p  class="Second lead"><strong>Bhagavad Gita is a Sanskrit text and one of the 18 Maha Puranas. It is known as the 'Essence of the Vedas'. The primary subject matter of the text is Krishna and the teaching of Bhagavad Gita, an Arjuna narrative through which Lord Krishna delivers philosophical lessons about life, the universe, and everything.</strong> </p>
+            <% } %>
+               
+                
+            </div>
+        </div>
+        <button type="submit" id="noAuth" class="btn1 btn-lg btn-block rounded-pill" onclick="window.location.href='/ch1'">Arjuna Visada Yoga</button>
+       <button type="submit" class="btn1 btn-lg btn-block rounded-pill" onclick="window.location.href='/ch2'">Sankhya Yoga</button>
+       <button type="submit" class="btn1 btn-lg btn-block rounded-pill" onclick="window.location.href='/ch3'">Karma Yoga</button>
+       <button tyype="submit" class="btn1 btn-lg btn-block rounded-pill" onclick="window.location.href='/ch4'">Jnana Karma Sanyasa Yoga</button>
+
+
+    </main>
+</div>
+    
+       
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<footer>
+    <div class="container mb-0">
+        <p>&copy; 2021 Srimad Bhagavad Gita. All rights reserved.</p>
+    </div>
+</footer>
+</html>
